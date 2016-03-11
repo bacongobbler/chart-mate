@@ -77,9 +77,9 @@ else
   helm repo add deis https://github.com/deis/charts.git || true
 fi
 
-helm fetch deis/deis-dev
-helm generate deis-dev
-helm install deis-dev
+helm fetch deis/workflow-dev
+helm generate workflow-dev
+helm install workflow-dev
 
 if [ ! -z $DEIS_LOGGER ]; then
   helm fetch deis/deis-logger
